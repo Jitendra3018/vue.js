@@ -1,6 +1,6 @@
 # Vue JS
 
-**1. What is Vue.js?**
+<h1>**1. What is Vue.js?**</h1>
     Vue.js is the JS framework for building applications and websites.
     a. Vue is generally used to create single-page applications that run on the client, but can be used to create full-stack applications by making HTTP requests to a backend server. Vue is possible with Node.js and Express.js (MEVN stack)
     b. Vue can also run on the server-side by using a SSR framework like Nuxt.
