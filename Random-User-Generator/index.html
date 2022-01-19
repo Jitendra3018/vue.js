@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random User Generator</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div id="app">
+			<!-- We can add this here directly instead of passing it as a template in app.js file -->
+			<!-- For the image, we have to use the directive called v-bind (shortcut is that, we don't have to write v-bind and instead of that, we can just simply mention the colons as done with the alt property below) because the direct way as written below can be done in react but not in Vue 
+			<img src={{picture}} alt="">-->
+			<img
+				v-bind:src="picture"
+				:alt="`${firstName} ${lastName}`"
+				:class="gender"
+			/>
+			<h1>{{firstName}} {{lastName}}</h1>
+			<h3>Email: {{email}}</h3>
+
+			<!-- Event handlers are shown -->
+			<button v-on:click="getUser()" :class="gender">
+				Get Random User
+			</button>
+		</div>
+
+		<!-- Vue js script CDN -->
+		<script src="https://unpkg.com/vue@next"></script>
+
+		<!-- External JS file link -->
+		<script src="./app.js"></script>
+	</body>
+</html>
